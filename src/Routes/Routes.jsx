@@ -5,6 +5,10 @@ import AllProducts from "../Components/Pages/AllProducts/AllProducts";
 import Cart from "../Components/Pages/Cart/Cart";
 import ProductDetails from "../Components/Pages/ProductDetails/ProductDetails";
 import Checkout from "../Components/Pages/checkout/Checkout";
+import SignUp from "../Components/Pages/Auth/SignUp/SignUp";
+import SignIn from "../Components/Pages/Auth/SignIn/SignIn";
+import AboutUs from "../Components/Pages/AboutUs/AboutUs";
+import ContactUs from "../Components/Pages/ContactUs/ContactUs";
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +22,14 @@ export const router = createBrowserRouter([
         element: <Home></Home>,
       },
     ],
+  },
+  {
+    path: "/signUp",
+    element: <SignUp></SignUp>,
+  },
+  {
+    path: "/signIn",
+    element: <SignIn></SignIn>,
   },
   {
     path: "/all-products",
@@ -35,4 +47,13 @@ export const router = createBrowserRouter([
     path: "/checkout",
     element: <Checkout></Checkout>,
   },
+  {
+    path: "/aboutUs",
+    element: <AboutUs></AboutUs>,
+  },
+  {
+    path: "/contactUs",
+    element: <ContactUs></ContactUs>,
+  },
+
 ]);

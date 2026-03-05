@@ -1,10 +1,10 @@
 import React from 'react';
 
 const categories = [
-  { name: 'Cleansers', img: 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=60' },
-  { name: 'Serums', img: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=60' },
-  { name: 'Moisturizers', img: 'https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&q=60' },
-  { name: 'Masks', img: 'https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&q=60' },
+  { name: 'Cleansers', img: '/src/assets/images/c1.jpg' },
+  { name: 'Serums', img: '/src/assets/images/c2.jpg' },
+  { name: 'Moisturizers', img: '/src/assets/images/c3.jpg' },
+  { name: 'Masks', img: '/src/assets/images/c4.jpg' },
 ];
 
 const ShopByCategory = () => {

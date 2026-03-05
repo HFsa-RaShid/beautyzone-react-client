@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import { NavLink } from 'react-router-dom';
 
 const Hero = () => {
   const slides = [
@@ -47,7 +48,9 @@ const Hero = () => {
                     Premium skincare that combines innovation with clean, effective ingredients for all skin types.
                   </p>
                   <div className="flex gap-4">
-                    <button className="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-black hover:text-white transition">Shop Now</button>
+                    <NavLink to="/all-products">
+                      <button className="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-black hover:text-white transition">Shop Now</button>
+                    </NavLink>
                     <button className="bg-white/20 backdrop-blur-md border border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-black transition">About Us</button>
                   </div>
                 </div>

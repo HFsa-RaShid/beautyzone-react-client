@@ -8,6 +8,7 @@ import Bestseller from "./HomeSections/Bestsellers";
 import NewArrivals from "./HomeSections/NewArival";
 import Newsletter from "../../Shared/Newsletter/Newsletter";
 import Testimonials from "./HomeSections/Testimonials";
+import SkincarePhilosophy from "./HomeSections/SkincarePhilosophy";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Bestseller></Bestseller>
       <ShopByCategory></ShopByCategory>
       <NewArrivals></NewArrivals>
+      <SkincarePhilosophy></SkincarePhilosophy>
       <Testimonials></Testimonials>
       <Newsletter></Newsletter>
       <Footer></Footer>

@@ -80,7 +80,7 @@ html, body {
 /* Card Style & Hover Effect */
 .card-image-wrapper {
   position: relative;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 5;
   background-color: #f9f9f9;
   overflow: hidden;
   display: flex;

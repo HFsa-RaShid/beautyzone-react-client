@@ -8,18 +8,21 @@ import { Toaster } from "react-hot-toast";
 import { router } from "./Routes/Routes";
 import "./index.css";
 import { CartProvider } from "./Provider/CartContext.jsx";
+import { AuthProvider } from "./Provider/AuthContext/AuthContext.jsx";
 
 const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <CartProvider>
+      <AuthProvider>
+        <CartProvider>
         <HelmetProvider>
           <RouterProvider router={router} />
           <Toaster position="top-right" reverseOrder={false} />
         </HelmetProvider>
       </CartProvider>
+      </AuthProvider>
     </QueryClientProvider>
   </React.StrictMode>,
 );

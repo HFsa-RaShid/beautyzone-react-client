@@ -32,7 +32,7 @@ const NewArrivals = () => {
             className="group cursor-pointer"
             onClick={() => navigate(`/product/${product._id}`)}
           >
-            <div className="card-image-wrapper">
+            <div className="card-image-wrapper ">
               <img
                 src={product.images[0]}
                 alt={product.name}

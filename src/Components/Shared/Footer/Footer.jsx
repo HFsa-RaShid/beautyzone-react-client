@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-white py-16">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
         <div>
-          <NavLink to="/" className="text-2xl cursor-pointer flex items-center">
+          <NavLink to="/" className="cursor-pointer flex items-center">
             <img src={logo} alt="Sakura" className="h-16 w-auto mr-2" />
           </NavLink>
           <p className="text-sm text-gray-500 mb-6 leading-relaxed">
@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="font-bold mb-4 uppercase text-xs tracking-widest">
+          <h4 className=" mb-4 uppercase text-xl tracking-widest">
             Shop
           </h4>
           <ul className="space-y-2 text-sm text-gray-600">
@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="font-bold mb-4 uppercase text-xs tracking-widest">
+          <h4 className=" mb-4 uppercase text-xl tracking-widest">
             About
           </h4>
           <ul className="space-y-2 text-sm text-gray-600">

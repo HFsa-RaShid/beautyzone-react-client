@@ -38,7 +38,7 @@ const Bestseller = () => {
             className="group cursor-pointer"
             onClick={() => navigate(`/product/${product._id}`)}
           >
-            <div className="product-card-img mb-4 relative overflow-hidden bg-brand-gray aspect-3/4 flex items-center justify-center">
+            <div className="product-card-img mb-4 card-image-wrapper">
               <img
                 src={product.images[0]}
                 alt={product.name}
