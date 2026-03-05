@@ -1,7 +1,5 @@
-
-
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useCart } from "../../../Provider/useCart";
 import Navbar from "../../Shared/Navbar/Navbar";
 import { Trash2, Minus, Plus } from "lucide-react";
@@ -60,7 +58,7 @@ const Cart = () => {
                     <p className="text-gray-400 text-xs mb-4 uppercase tracking-widest">
                       {product.category}
                     </p>
-                 
+
                     <div className="flex items-center gap-2 mt-8">
                       <button
                         onClick={() => updateQuantity(product._id, -1)}
@@ -69,7 +67,9 @@ const Cart = () => {
                         <Minus size={12} />
                       </button>
 
-                      <span className="px-4 py-2 text-xs font-bold border border-gray-100">{quantity}</span>
+                      <span className="px-4 py-2 text-xs font-bold border border-gray-100">
+                        {quantity}
+                      </span>
 
                       <button
                         onClick={() => updateQuantity(product._id, 1)}
@@ -129,13 +129,15 @@ const Cart = () => {
                 </button>
               </div>
 
-              <button
-                onClick={() => navigate("/checkout")}
-                className="btn-primary w-full flex justify-between items-center"
-              >
-                <span>Proceed to Checkout</span>
-                <span>→</span>
-              </button>
+              <NavLink to="/checkout">
+                <button
+                  
+                  className="btn-primary w-full flex justify-between items-center"
+                >
+                  <span>Proceed to Checkout</span>
+                  <span>→</span>
+                </button>
+              </NavLink>
             </div>
           </div>
         </div>
