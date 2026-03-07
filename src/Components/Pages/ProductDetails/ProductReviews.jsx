@@ -70,7 +70,7 @@ const ProductReviews = () => {
           </div>
           <button 
             onClick={handleWriteReview}
-            className="border border-white bg-white text-gray-800 px-8 py-3 rounded-full text-sm font-semibold hover:bg-black hover:text-white transition-all shadow-sm"
+            className="border border-white bg-white text-[#FF3777] px-8 py-3 rounded-full text-sm font-semibold hover:bg-black hover:text-white transition-all shadow-sm"
           >
             Write a Review
           </button>

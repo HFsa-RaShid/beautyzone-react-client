@@ -7,6 +7,7 @@ import Navbar from "../../Shared/Navbar/Navbar";
 import Bestseller from "../LandingPage/HomeSections/Bestsellers";
 import Footer from "../../Shared/Footer/Footer";
 import ProductReviews from "./ProductReviews";
+import HandPickedForYou from "./HandPickedForYou";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -137,6 +138,7 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
+      <HandPickedForYou></HandPickedForYou>
       <ProductReviews></ProductReviews>
       <Bestseller></Bestseller>
       <Footer></Footer>

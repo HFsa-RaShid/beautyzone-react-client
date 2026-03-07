@@ -18,11 +18,13 @@ const ContactUs = () => {
     return (
         <div className="font-raleway bg-white">
             <Navbar></Navbar>
-          <div className='container mx-auto px-10'>
-              <h1 className="text-4xl font-serif p-10 md:p-20">Contact Us</h1>
+          <div className=''>
+              <div className='container mx-auto py-10'>
+                <h1 className="text-4xl">Contact Us</h1>
+              </div>
 
             {/* Get in Touch Section */}
-            <section className="flex flex-col md:flex-row items-stretch px-10 md:px-20 gap-12 pb-20">
+            <section className="flex flex-col md:flex-row items-stretch  gap-12 pb-20 container mx-auto">
                 <div className="md:w-1/2">
                     <h3 className="text-xl font-bold mb-2">Get in Touch</h3>
                     <p className="text-xs text-gray-500 mb-8">Have a question or need assistance? Fill out the form below and our team will get back to you as soon as possible.</p>
@@ -46,13 +48,14 @@ const ContactUs = () => {
                     </form>
                 </div>
                 <div className="md:w-1/2">
-                    <img src="/src/assets/images/contact-product.jpg" alt="Contact" className="w-full h-full object-cover rounded-sm" />
+                    <img src="/src/assets/images/contact/contact1.jpg" alt="Contact" className="w-full h-full object-cover rounded-sm" />
                 </div>
             </section>
 
             {/* Other Ways Section */}
-            <section className="bg-[#f2e9d9] py-16 px-10 md:px-20">
-                <h3 className="text-xl font-bold mb-10">Other Ways to Reach Us</h3>
+            <section className="bg-[#f2e9d9] py-16 ">
+                <div className='container mx-auto'>
+                    <h3 className="text-xl font-bold mb-10">Other Ways to Reach Us</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     <div className="flex items-start gap-4">
                         <Mail size={20} />
@@ -76,12 +79,13 @@ const ContactUs = () => {
                         </div>
                     </div>
                 </div>
+                </div>
             </section>
 
             {/* FAQ Section */}
-            <section className="flex flex-col md:flex-row items-stretch py-20">
+            <section className="flex flex-col md:flex-row items-stretch py-20 container mx-auto">
                 <div className="md:w-2/5">
-                    <img src="/src/assets/images/faq-img.jpg" alt="FAQ" className="w-full h-full object-cover" />
+                    <img src="/src/assets/images/contact/contact2.jpg" alt="FAQ" className="w-full h-full object-cover" />
                 </div>
                 <div className="md:w-3/5 p-10 md:p-20">
                     <h3 className="text-2xl font-serif mb-2">Frequently Asked Questions</h3>

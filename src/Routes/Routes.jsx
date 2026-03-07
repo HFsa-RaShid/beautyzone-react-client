@@ -11,6 +11,9 @@ import AboutUs from "../Components/Pages/AboutUs/AboutUs";
 import ContactUs from "../Components/Pages/ContactUs/ContactUs";
 import PaymentSuccess from "../Components/Pages/Payments/PaymentSuccess";
 import PaymentCancel from "../Components/Pages/Payments/PaymentCancel";
+import DashboardLayout from "../Components/DashBoard/DashboardLayout/DashboardLayout";
+import DashboardProducts from "../Components/DashBoard/DashboardProducts/DashboardProducts";
+import DashboardOrders from "../Components/DashBoard/DashboardOrders/DashboardOrders";
 
 export const router = createBrowserRouter([
   {
@@ -65,4 +68,27 @@ export const router = createBrowserRouter([
     path: "payment/fail",
     element: <PaymentCancel />,
   },
+  {
+    path: "dashboard",
+    element: <DashboardLayout></DashboardLayout>,
+    children: [
+      {
+        path: "products", 
+        element: <DashboardProducts></DashboardProducts>,
+      },
+      {
+        path: "orders",
+        element: <DashboardOrders></DashboardOrders>,
+      },
+      {
+        path: "overview",
+        element: <div>Overview Page</div>,
+      },
+
+    ]
+
+  },
+  
+
+  
 ]);
