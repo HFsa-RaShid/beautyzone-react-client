@@ -9,6 +9,8 @@ import SignUp from "../Components/Pages/Auth/SignUp/SignUp";
 import SignIn from "../Components/Pages/Auth/SignIn/SignIn";
 import AboutUs from "../Components/Pages/AboutUs/AboutUs";
 import ContactUs from "../Components/Pages/ContactUs/ContactUs";
+import PaymentSuccess from "../Components/Pages/Payments/PaymentSuccess";
+import PaymentCancel from "../Components/Pages/Payments/PaymentCancel";
 
 export const router = createBrowserRouter([
   {
@@ -55,5 +57,12 @@ export const router = createBrowserRouter([
     path: "/contactUs",
     element: <ContactUs></ContactUs>,
   },
-
+  {
+    path: "payment/success/:tranId",
+    element: <PaymentSuccess />,
+  },
+  {
+    path: "payment/fail",
+    element: <PaymentCancel />,
+  },
 ]);
