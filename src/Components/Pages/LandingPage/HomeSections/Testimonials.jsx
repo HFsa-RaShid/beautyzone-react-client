@@ -3,19 +3,19 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Star, RefreshCw } from 'lucide-react'; // আইকন যোগ করা হয়েছে
+import { Star, RefreshCw } from 'lucide-react'; 
 import useAllReviews from '../../../Hooks/useAllReviews';
 
 const Testimonials = () => {
-    // isLoading চেক করা জরুরি যাতে ডাটা আসার আগে এরর না দেয়
+   
     const { reviews, isLoading, refetch } = useAllReviews();
 
-    // সমাধান ১: লোডিং স্টেট হ্যান্ডেল করা
+
     if (isLoading) {
         return <div className="py-20 text-center font-raleway">Loading Reviews...</div>;
     }
 
-    // সমাধান ২: reviews যদি null হয় তবে খালি অ্যারে [] হিসেবে ধরা
+
     const reviewsData = reviews || [];
 
     return (
@@ -23,8 +23,6 @@ const Testimonials = () => {
             <div className="text-center mb-12 relative">
                 <p className="text-[10px] uppercase tracking-widest text-gray-400 font-bold mb-2">3940+ Happy Users</p>
                 <h2 className="text-4xl font-serif text-[#a68269]">Don't just take our words</h2>
-                
-                {/* Refetch Button (ঐচ্ছিক: ডাটা আপডেট করার জন্য) */}
                 <button 
                     onClick={() => refetch()} 
                     className="absolute right-10 top-0 p-2 hover:rotate-180 transition-transform duration-500"
@@ -48,10 +46,10 @@ const Testimonials = () => {
                         {reviewsData.map((rev) => (
                             <SwiperSlide key={rev._id || rev.id}>
                                 <div className="flex flex-col md:flex-row items-center gap-8 p-6">
-                                    <div className="w-48 h-48 rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+                                    <div className="w-48 h-48 rounded-2xl overflow-hidden  transition-all duration-500">
                                         <img 
-                                            src={rev.image} 
-                                            alt={rev.name} 
+                                            src={rev.userPhoto} 
+                                            alt={rev.userName} 
                                             className="w-full h-full object-cover" 
                                         />
                                     </div>
@@ -68,7 +66,7 @@ const Testimonials = () => {
                                         <p className="text-gray-600 italic mb-6 leading-relaxed">
                                             "{rev.comment || rev.text}"
                                         </p>
-                                        <h4 className="font-bold text-gray-800">{rev.name}</h4>
+                                        <h4 className="font-bold text-gray-800">{rev.userName}</h4>
                                     </div>
                                 </div>
                             </SwiperSlide>

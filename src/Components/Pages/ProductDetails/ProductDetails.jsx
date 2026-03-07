@@ -6,6 +6,7 @@ import { useCart } from "../../../Provider/useCart";
 import Navbar from "../../Shared/Navbar/Navbar";
 import Bestseller from "../LandingPage/HomeSections/Bestsellers";
 import Footer from "../../Shared/Footer/Footer";
+import ProductReviews from "./ProductReviews";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -57,7 +58,7 @@ const ProductDetails = () => {
                 </div>
               ))}
             </div>
-            <div className="flex-1 bg-brand-gray h-[500px]  overflow-hidden">
+            <div className="flex-1 bg-brand-gray h-125  overflow-hidden">
               <img
                 src={product.images[selectedImg]}
                 className="w-full h-full object-cover"
@@ -136,7 +137,7 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
-
+      <ProductReviews></ProductReviews>
       <Bestseller></Bestseller>
       <Footer></Footer>
     </div>
