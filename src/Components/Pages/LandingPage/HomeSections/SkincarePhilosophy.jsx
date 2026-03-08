@@ -34,12 +34,11 @@ const SkincarePhilosophy = () => {
                 {/* Right Side: Image spanning full height and edge */}
                 <div className="md:w-1/2 px-10">
                     <img 
-                        src="/src/assets/images/product.jpg" 
+                        src="/images/product.jpg" 
                         alt="Skincare Products" 
                         className="full h-full min-h-[400px] object-cover"
                     />
                 </div>
-
             </div>
         </section>
     );
