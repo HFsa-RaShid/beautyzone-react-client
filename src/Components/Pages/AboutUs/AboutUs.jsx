@@ -22,7 +22,7 @@ const AboutUs = () => {
             </div>
             <div className="md:w-1/2">
               <img
-                src="/src/assets/images/about/about1.jpg"
+                src="/images/about/about1.jpg"
                 alt="Story"
                 className="w-full h-full object-cover min-h-[400px]"
               />
@@ -35,7 +35,7 @@ const AboutUs = () => {
             <section className="container mx-auto px-10 flex flex-col-reverse md:flex-row items-stretch">
           <div className="md:w-1/2">
             <img
-              src="/src/assets/images/about/about2.jpg"
+              src="/images/about/about2.jpg"
               alt="Journey"
               className="w-full h-full object-cover min-h-[400px]"
             />
@@ -61,8 +61,9 @@ const AboutUs = () => {
        
 
         {/* Section 3: Our Philosophy */}
-        <section className="flex flex-col md:flex-row items-stretch bg-white">
-          <div className="md:w-1/2 p-10 md:p-24 flex flex-col justify-center">
+        <section className=" bg-white">
+         <div className="container mx-auto flex flex-col md:flex-row items-stretch"> 
+           <div className="md:w-1/2 p-10 md:p-24 flex flex-col justify-center">
             <h2 className="text-4xl font-serif text-gray-800 mb-6">
               Our Philosophy
             </h2>
@@ -86,16 +87,18 @@ const AboutUs = () => {
           </div>
           <div className="md:w-1/2">
             <img
-              src="/src/assets/images/about/about3.jpg"
+              src="/images/about/about3.jpg"
               alt="Philosophy"
               className="w-full h-full object-cover min-h-125"
             />
           </div>
+         </div>
         </section>
 
         {/* Section 4: Our Ingredients */}
         <section className="py-20 px-10 text-center bg-[#f2e9d9]">
-          <h2 className="text-3xl font-serif mb-4">Our Ingredients</h2>
+          <div className="container mx-auto">
+            <h2 className="text-3xl font-serif mb-4">Our Ingredients</h2>
           <p className="text-xs text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed">
             We believe in the power of nature enhanced by science. Our
             formulations combine time-honored Korean botanical ingredients with
@@ -133,6 +136,7 @@ const AboutUs = () => {
                 </div>
               </div>
             ))}
+          </div>
           </div>
         </section>
       </div>

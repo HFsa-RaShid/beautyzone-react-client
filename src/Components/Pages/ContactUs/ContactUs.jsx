@@ -48,7 +48,7 @@ const ContactUs = () => {
                     </form>
                 </div>
                 <div className="md:w-1/2">
-                    <img src="/src/assets/images/contact/contact1.jpg" alt="Contact" className="w-full h-full object-cover rounded-sm" />
+                    <img src="/images/contact/contact1.jpg" alt="Contact" className="w-full h-full object-cover rounded-sm" />
                 </div>
             </section>
 
@@ -85,7 +85,7 @@ const ContactUs = () => {
             {/* FAQ Section */}
             <section className="flex flex-col md:flex-row items-stretch py-20 container mx-auto">
                 <div className="md:w-2/5">
-                    <img src="/src/assets/images/contact/contact2.jpg" alt="FAQ" className="w-full h-full object-cover" />
+                    <img src="/images/contact/contact2.jpg" alt="FAQ" className="w-full h-full object-cover" />
                 </div>
                 <div className="md:w-3/5 p-10 md:p-20">
                     <h3 className="text-2xl font-serif mb-2">Frequently Asked Questions</h3>
