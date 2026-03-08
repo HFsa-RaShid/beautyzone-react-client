@@ -8,15 +8,15 @@ import { NavLink } from 'react-router-dom';
 const Hero = () => {
   const slides = [
     {
-      img: "/src/assets/images/slide1.jpg",
+      img: "/images/slide1.jpg",
       title: "Discover your skin's true potential",
     },
     {
-      img: "/src/assets/images/slide2.jpg",
+      img: "/images/slide2.jpg",
       title: "Clean beauty for your natural glow",
     },
     {
-      img: "/src/assets/images/slide3.jpg",
+      img: "/images/slide3.jpg",
       title: "Clean beauty for your natural glow",
     }
   ];

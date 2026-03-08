@@ -1,10 +1,10 @@
 import React from 'react';
 
 const categories = [
-  { name: 'Cleansers', img: '/src/assets/images/c1.jpg' },
-  { name: 'Serums', img: '/src/assets/images/c2.jpg' },
-  { name: 'Moisturizers', img: '/src/assets/images/c3.jpg' },
-  { name: 'Masks', img: '/src/assets/images/c4.jpg' },
+  { name: 'Cleansers', img: '/images/c1.jpg' },
+  { name: 'Serums', img: '/images/c2.jpg' },
+  { name: 'Moisturizers', img: '/images/c3.jpg' },
+  { name: 'Masks', img: '/images/c4.jpg' },
 ];
 
 const ShopByCategory = () => {
