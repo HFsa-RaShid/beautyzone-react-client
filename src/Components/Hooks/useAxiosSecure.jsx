@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../Provider/AuthContext";
 
 const axiosSecure = axios.create({
-  baseURL: "http://localhost:5001",
+  baseURL: "https://beauty-zone-server-app.vercel.app",
   withCredentials: true,
 });
 
@@ -14,12 +14,15 @@ const useAxiosSecure = () => {
   axiosSecure.interceptors.response.use(
     (response) => response,
     async (error) => {
-      if (error.response && (error.response.status === 401 || error.response.status === 403)) {
+      if (
+        error.response &&
+        (error.response.status === 401 || error.response.status === 403)
+      ) {
         await logout();
         navigate("/signin");
       }
       return Promise.reject(error);
-    }
+    },
   );
 
   return axiosSecure;
