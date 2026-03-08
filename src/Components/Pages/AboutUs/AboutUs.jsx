@@ -108,15 +108,15 @@ const AboutUs = () => {
             {[
               {
                 title: "Botanical Extracts",
-                img: "/src/assets/images/about/about4.jpg",
+                img: "/images/about/about4.jpg",
               },
               {
                 title: "Fermented Ingredients",
-                img: "/src/assets/images/about/about5.jpg",
+                img: "/images/about/about5.jpg",
               },
               {
                 title: "Scientific Compounds",
-                img: "/src/assets/images/about/about6.jpg",
+                img: "/images/about/about6.jpg",
               },
             ].map((item, index) => (
               <div key={index} className="relative h-64 overflow-hidden group">
